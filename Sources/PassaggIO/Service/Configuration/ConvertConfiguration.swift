@@ -11,4 +11,12 @@ public struct ConvertConfiguration {
     // MARK: - Properties
     let inputType: ConvertInputType
     let outputType: ConvertOutputType
+    
+    public init(
+        input: ConvertInputType,
+        output: ConvertOutputType
+    ) {
+        self.inputType = input
+        self.outputType = output
+    }
 }

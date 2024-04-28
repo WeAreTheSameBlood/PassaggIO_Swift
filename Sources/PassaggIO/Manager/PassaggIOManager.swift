@@ -1,5 +1,5 @@
 //
-//  PassaggIOManager.swift
+//  PassaggIO.swift
 //
 //
 //  Created by Andrii Hlybchenko on 27.04.2024.
@@ -7,23 +7,16 @@
 
 import Foundation
 
-public protocol PassaggIOManager {
-    // MARK: - Funcs
-    func convert(
-        _ configuration: ConvertConfiguration,
-        inputObjUrl: URL,
-        outputObjUrl: URL,
-        completion: @escaping (URL?) -> Void
-    )
-}
-
-public final class PassaggIOManagerImpl: PassaggIOManager {
+public final class PassaggIO {
     // MARK: - Services
     private let typesConverter: TypesConverter = TypesConverterImpl()
+    
+    // MARK: - Init
+    public init() { }
 }
 
 // MARK: - Convert
-extension PassaggIOManagerImpl {
+extension PassaggIO {
     public func convert(
         _ configuration: ConvertConfiguration,
         inputObjUrl: URL,

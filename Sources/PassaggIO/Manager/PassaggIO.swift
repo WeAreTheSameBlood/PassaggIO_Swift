@@ -16,8 +16,8 @@ public final class PassaggIO {
 }
 
 // MARK: - Convert
-extension PassaggIO {
-    public func convert(
+public extension PassaggIO {
+    func convert(
         _ configuration: ConvertConfiguration,
         inputObjUrl: URL,
         outputObjUrl: URL,
